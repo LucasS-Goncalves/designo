@@ -1,1 +1,14 @@
-<p>navbar works!</p>
+<header [ngClass]="{'active': openedMenu}">
+  <img src="../../../assets/shared/desktop/logo-dark.png" alt="Designo's Logo">
+  <button (click)="menuToggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="mobile-nav">
+    <a>OUR COMPANY</a>
+    <a>LOCATIONS</a>
+    <a>CONTACT</a>
+  </nav>
+</header>
+<div class="overlay"></div>
