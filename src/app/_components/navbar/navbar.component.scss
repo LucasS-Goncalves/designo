@@ -89,5 +89,12 @@ header{
   width: 100%;
   height: 100%;
   background-color: $black;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.overlay.active{
   opacity: .5;
+  visibility: visible;
 }

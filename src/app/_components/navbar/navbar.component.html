@@ -11,4 +11,4 @@
     <a>CONTACT</a>
   </nav>
 </header>
-<div class="overlay"></div>
+<div class="overlay" [ngClass]="{'active': openedMenu}" (click)="menuToggle()"></div>
