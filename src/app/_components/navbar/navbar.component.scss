@@ -58,6 +58,10 @@ header{
     }
   }
 
+  .mobile-table-desktop{
+    display: none;
+  }
+
   &.active{
     button{
       span:nth-child(2){
@@ -97,4 +101,27 @@ header{
 .overlay.active{
   opacity: .5;
   visibility: visible;
+}
+
+@media(min-width: 768px){
+
+  header{
+    height: 160px;
+    padding: 0 45px;
+
+    button, .mobile-nav{
+      display: none;
+    }
+
+    .mobile-table-desktop{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      a{
+        font-size: .875rem;
+        letter-spacing: 2px;
+      }
+    }
+  }
 }
