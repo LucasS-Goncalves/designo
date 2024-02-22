@@ -1,19 +1,21 @@
 <header [ngClass]="{'active': openedMenu}">
-  <img src="../../../assets/shared/desktop/logo-dark.png" alt="Designo's Logo">
-  <button (click)="menuToggle()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <nav class="mobile-nav">
-    <a>OUR COMPANY</a>
-    <a>LOCATIONS</a>
-    <a>CONTACT</a>
-  </nav>
-  <nav class="mobile-table-desktop">
-    <a>OUR COMPANY</a>
-    <a>LOCATIONS</a>
-    <a>CONTACT</a>
-  </nav>
+  <div class="container">
+    <img src="../../../assets/shared/desktop/logo-dark.png" alt="Designo's Logo">
+    <button (click)="menuToggle()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="mobile-nav">
+      <a>OUR COMPANY</a>
+      <a>LOCATIONS</a>
+      <a>CONTACT</a>
+    </nav>
+    <nav class="mobile-table-desktop">
+      <a>OUR COMPANY</a>
+      <a>LOCATIONS</a>
+      <a>CONTACT</a>
+    </nav>
+  </div>
 </header>
 <div class="overlay" [ngClass]="{'active': openedMenu}" (click)="menuToggle()"></div>

@@ -3,85 +3,90 @@
 header{
   width: 100%;
   height: 96px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 25px;
   background-color: $white;
   position: fixed;
   z-index: 999;
 
-  img{
-    width: 202px;
-    height: 27px;
-  }
-
-  button{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-
-    span{
-      width: 24px;
-      height: 4px;
-      background-color: $black;
-      transition: .3s;
-    }
-
-
-  }
-
-  .mobile-nav{
+  .container{
     width: 100%;
-    height: 0px;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: $black;
-    padding-left: 25px;
-    transition: .3s;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
 
-    a{
-      font-size: 1.5rem;
-      line-height: 25px;
-      letter-spacing: 2px;
-      color: $white;
-
-      &:first-child{
-        padding-top: 50px;
-      }
+    img{
+      width: 202px;
+      height: 27px;
     }
-  }
 
-  .mobile-table-desktop{
-    display: none;
-  }
-
-  &.active{
     button{
-      span:nth-child(2){
-        opacity: 0;
-      }
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
 
-      span:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-      }
-
-      span:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+      span{
+        width: 24px;
+        height: 4px;
+        background-color: $black;
+        transition: .3s;
       }
     }
 
     .mobile-nav{
-      height: 235px;
-      visibility: visible;
-      opacity: 1;
-      padding-bottom: 50px;
+      width: 100%;
+      height: 0px;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      background-color: $black;
+      padding-left: 25px;
+      transition: .3s;
+
+      a{
+        font-size: 1.5rem;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: $white;
+
+        &:first-child{
+          padding-top: 50px;
+        }
+      }
+    }
+
+    .mobile-table-desktop{
+      display: none;
+    }
+  }
+
+  &.active{
+    .container{
+      button{
+        span:nth-child(2){
+          opacity: 0;
+        }
+
+        span:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        span:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+
+      .mobile-nav{
+        height: 235px;
+        visibility: visible;
+        opacity: 1;
+        padding-bottom: 50px;
+      }
     }
   }
 }
@@ -106,21 +111,70 @@ header{
 @media(min-width: 768px){
 
   header{
-    height: 160px;
-    padding: 0 45px;
+    height: 150px;
 
-    button, .mobile-nav{
-      display: none;
+    .container{
+      padding: 0 45px;
+
+      button, .mobile-nav{
+        display: none;
+      }
+
+      .mobile-table-desktop{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        a{
+          font-size: .875rem;
+          letter-spacing: 2px;
+        }
+      }
     }
+  }
+}
 
-    .mobile-table-desktop{
-      display: flex;
-      align-items: center;
-      gap: 50px;
+@media(min-width: 1366px){
 
-      a{
-        font-size: .875rem;
-        letter-spacing: 2px;
+  header{
+
+    .container{
+      max-width: 1111px;
+      margin: 0 auto;
+      padding: 0;
+
+      img{
+        cursor: pointer;
+      }
+
+      .mobile-table-desktop{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        a{
+          font-size: .875rem;
+          letter-spacing: 2px;
+          transition: .3s;
+          position: relative;
+          cursor: pointer;
+
+          &::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: transparent;
+            top: 100%;
+            left: 0;
+            transition: .3s;
+          }
+
+          &:hover::after{
+            background-color: $black;
+            width: 100%;
+          }
+        }
       }
     }
   }
