@@ -27,10 +27,11 @@ button:hover{
   text-transform: uppercase;
   font-size: .9375rem;
   font-weight: 500;
+  transition: .2s;
 }
 
 .btn:hover{
   background-color: $light-peach;
   color: $white;
-  transition: .2;
+
 }
