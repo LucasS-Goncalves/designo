@@ -36,6 +36,16 @@ button:hover{
 }
 
 .btn:hover{
+  color: $white;
   background-color: $light-peach;
+}
+
+.btn-onDark{
+  background-color: $white;
+  color: $black;
+}
+
+.btn-onLight{
+  background-color: $peach;
   color: $white;
 }
