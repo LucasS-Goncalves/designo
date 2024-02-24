@@ -21,6 +21,7 @@ footer{
     text-align: center;
     color: $white;
     gap: 20px;
+    z-index: 1;
 
     h3{
       font-size: 2rem;
@@ -43,16 +44,18 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-
+    width: 100%;
+    height: 100%;
     picture{
-
+      width: 100%;
+      height: 100%;
       .circles-img{
-        height: 100%;
         width: 100%;
+        height: 100%;
         display: block;
         object-fit: cover;
         object-position:top right;
-        rotate: 90deg;
+        pointer-events: none;
       }
     }
   }
