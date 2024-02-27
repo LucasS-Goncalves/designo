@@ -101,6 +101,7 @@ header{
   opacity: 0;
   visibility: hidden;
   transition: .3s;
+  z-index: 998;
 }
 
 .overlay.active{
