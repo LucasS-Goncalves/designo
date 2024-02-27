@@ -48,6 +48,7 @@ footer{
   }
 
   .info{
+    width: 327px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,5 +79,50 @@ footer{
 
   &.onContactPage{
     padding-top: 250px;
+  }
+}
+
+@media(min-width: 768px){
+
+  footer{
+    gap: 80px;
+    padding: 70px 0;
+
+    .logo-pages-container{
+      width: 690px;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+
+      .hr-1{
+        display: none;
+      }
+
+      .hr-2{
+        display: block;
+        position: absolute;
+        top: calc(100% + 40px);
+      }
+
+      nav{
+        flex-direction: row;
+        gap: 40px;
+      }
+    }
+
+    .info{
+      width: 690px;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .info-details{
+        text-align: start;
+      }
+    }
+
+    &.onContactPage{
+      padding-top: 200px;
+    }
   }
 }
