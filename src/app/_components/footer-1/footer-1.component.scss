@@ -74,6 +74,14 @@ footer{
       display: flex;
       align-items: center;
       gap: 15px;
+
+      li{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 
@@ -123,6 +131,71 @@ footer{
 
     &.onContactPage{
       padding-top: 200px;
+    }
+  }
+}
+
+@media(min-width: 1366px){
+
+  footer{
+
+    .logo-pages-container{
+      width: 1111px;
+
+      nav{
+
+        a{
+          cursor: pointer;
+          position: relative;
+
+          &::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: $white;
+            top: calc(100% + 2px);
+            left: 0;
+            transition: .3s;
+          }
+
+          &:hover::after{
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .info{
+      width: 1111px;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .info-details{
+        text-align: start;
+      }
+
+      .social-medias{
+        li{
+          cursor: pointer;
+          svg{
+            path{
+              transition: .3s;
+            }
+          }
+
+          &:hover{
+            path{
+              fill: $light-peach;
+            }
+          }
+        }
+      }
+    }
+
+    &.onContactPage{
+      padding-top: 170px;
     }
   }
 }

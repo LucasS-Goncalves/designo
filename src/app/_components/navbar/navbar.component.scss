@@ -164,15 +164,14 @@ header{
             content: "";
             position: absolute;
             width: 0;
+            background-color: $black;
             height: 1px;
-            background-color: transparent;
             top: 100%;
             left: 0;
             transition: .3s;
           }
 
           &:hover::after{
-            background-color: $black;
             width: 100%;
           }
         }
