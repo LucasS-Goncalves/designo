@@ -70,3 +70,41 @@ header{
     }
   }
 }
+
+@media(min-width: 768px){
+
+  header{
+    width: 689px;
+    height: 880px;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    article{
+      top: 10%;
+      width: auto;
+      gap: 35px;
+
+      h2{
+        width: 573px;
+        font-size: 3rem;
+        line-height: 48px;
+      }
+
+      p{
+        width: 445px;
+        font-size: 1rem;
+        line-height: 26px;
+      }
+    }
+
+    .hero-img-container{
+      height: 560px;
+    }
+
+    .circle-container {
+      width: 550px;
+      height: 720px;
+      top: 120px;
+    }
+  }
+}
