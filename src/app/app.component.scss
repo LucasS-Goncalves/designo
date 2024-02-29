@@ -1,1 +1,12 @@
 @import "../styles/variables.scss";
+
+.padding-div{
+  height: 96px;
+}
+
+@media(min-width: 768px){
+
+  .padding-div{
+    height: 150px;;
+  }
+}
