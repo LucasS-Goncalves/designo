@@ -1,0 +1,18 @@
+<div [ngClass]="{'largest': largest}">
+  <picture>
+    <source media="(max-width: 767px)" [srcset]="card.images.mobile">
+    <source media="(max-width: 1365px)" [srcset]="card.images.tablet">
+    <source media="(min-width: 1366px)" [srcset]="card.images.desktop">
+    <img [src]="card.images.mobile" [alt]="card.title">
+  </picture>
+  <article>
+    <h4>
+      {{card.title}}
+    </h4>
+    <a>
+      view projects
+      <img src="../../../assets/shared/arrowSvg.svg" alt="arrow">
+    </a>
+  </article>
+  <div class="hover-background"></div>
+</div>

@@ -1,0 +1,98 @@
+@import "../../../styles/variables.scss";
+
+div{
+  position: relative;
+  width: 327px;
+  height: 250px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: block;
+  }
+
+  article{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    z-index: 2;
+
+    h4{
+      font-size: 1.75rem;
+      line-height: 36px;
+      font-weight: 500;
+      letter-spacing: 1.4px;
+      margin-bottom: 14px;
+    }
+
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: .9375rem;
+      font-weight: 500;
+      letter-spacing: 5px;
+
+      img{
+        width: 4px;
+        height: 8px;
+      }
+    }
+  }
+
+  .hover-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1;
+    background-color: $peach;
+    border-radius: 15px;
+  }
+}
+
+@media(min-width: 768px){
+
+  div{
+    width: 689px;
+    height: 200px;
+
+    article{
+      h4{
+        font-size: 2.5rem;
+        line-height: 48px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media(min-width: 1366px){
+
+  div{
+    width: 541px;
+    height: 308px;
+
+    &.largest{
+      height: 640px;
+    }
+
+    &:hover{
+
+      .hover-background{
+        opacity: .8;
+        cursor: pointer;
+      }
+    }
+  }
+}
