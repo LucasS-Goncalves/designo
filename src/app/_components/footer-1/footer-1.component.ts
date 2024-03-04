@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './footer-1.component.scss'
 })
 export class Footer1Component {
-  @Input() contactPage = false;
+  @Input() isNotContactPage = true;
 }

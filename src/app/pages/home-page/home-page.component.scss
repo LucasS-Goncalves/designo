@@ -91,7 +91,7 @@ header{
 .benefits_section{
   display: flex;
   justify-content: center;
-  margin: 110px 0;
+  margin-top: 110px;
 
   ul{
     width: 327px;
@@ -152,6 +152,12 @@ header{
   }
 }
 
+.footers_container{
+  .footer2-container{
+    transform: translateY(50%);
+  }
+}
+
 
 @media(min-width: 768px){
 
@@ -195,7 +201,7 @@ header{
   }
 
   .benefits_section{
-    margin: 130px 0;
+    margin-top: 130px;
 
     ul{
       width: 690px;
@@ -218,6 +224,11 @@ header{
     }
   }
 
+  .footers_container{
+    .footer2-container{
+      transform: translateY(30%);
+    }
+  }
 }
 
 
@@ -257,7 +268,7 @@ header{
   }
 
   .benefits_section{
-    margin: 150px 0;
+    margin-top: 150px;
 
     ul{
       width: 1111px;
@@ -277,6 +288,12 @@ header{
           }
         }
       }
+    }
+  }
+
+  .footers_container{
+    .footer2-container{
+      transform: translateY(25%);
     }
   }
 }
