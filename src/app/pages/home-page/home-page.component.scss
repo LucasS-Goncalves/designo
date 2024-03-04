@@ -75,7 +75,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
   width: 327px;
   margin: 0 auto;
 
@@ -87,6 +87,65 @@ header{
     gap: 25px;
   }
 }
+
+.benefits_section{
+  display: flex;
+  justify-content: center;
+  margin: 110px 0;
+
+  ul{
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+
+    li{
+      article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        text-align: center;
+
+        .images-container{
+          position: relative;
+          width: 202px;
+          height: 202px;
+
+          .circle{
+            width: 100%;
+          }
+
+          .benefit_img{
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+
+        h5{
+          font-size: 1.25rem;
+          font-weight: 500;
+          line-height: 26px;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          color: $dark-grey;
+        }
+
+        p{
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 26px;
+          color: $dark-grey;
+        }
+
+      }
+    }
+  }
+}
+
 
 @media(min-width: 768px){
 
