@@ -255,4 +255,28 @@ header{
     flex-direction: row;
     width: 1111px;
   }
+
+  .benefits_section{
+    margin: 150px 0;
+
+    ul{
+      width: 1111px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      li{
+        article{
+          flex-direction: column;
+          text-align: center;
+
+          .text{
+            align-items: center;
+            gap: 30px;
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
 }
