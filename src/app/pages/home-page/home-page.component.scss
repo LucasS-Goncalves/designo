@@ -194,6 +194,30 @@ header{
     width: 689px;
   }
 
+  .benefits_section{
+    margin: 130px 0;
+
+    ul{
+      width: 690px;
+      align-items: center;
+      gap: 40px;
+
+      li{
+        article{
+          flex-direction: row;
+          gap: 47px;
+          text-align: start;
+
+          .text{
+            align-items: flex-start;
+            gap: 20px;
+            width: 440px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
