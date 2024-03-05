@@ -71,6 +71,10 @@ header{
   }
 }
 
+.left_leaf{
+  display: none;
+}
+
 .view_projects_cards{
   display: flex;
   flex-direction: column;
@@ -92,6 +96,10 @@ header{
   display: flex;
   justify-content: center;
   margin-top: 110px;
+
+  .right_leaf{
+    display: none;
+  }
 
   ul{
     width: 327px;
@@ -166,6 +174,7 @@ header{
     height: 880px;
     margin: 0 auto;
     border-radius: 15px;
+    z-index: 2;
 
     article{
       top: 10%;
@@ -194,6 +203,7 @@ header{
       height: 720px;
       top: 120px;
     }
+
   }
 
   .view_projects_cards{
@@ -202,11 +212,13 @@ header{
 
   .benefits_section{
     margin-top: 130px;
+    position: relative;
 
     ul{
       width: 690px;
       align-items: center;
       gap: 40px;
+      z-index: 1;
 
       li{
         article{
@@ -262,6 +274,13 @@ header{
     }
   }
 
+  .left_leaf{
+    display: block;
+    position: absolute;
+    top: 420px;
+    left: 0;
+  }
+
   .view_projects_cards{
     flex-direction: row;
     width: 1111px;
@@ -269,6 +288,15 @@ header{
 
   .benefits_section{
     margin-top: 150px;
+    margin-bottom: 70px;
+
+    .right_leaf{
+      display: block;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      rotate: 180deg;
+    }
 
     ul{
       width: 1111px;
