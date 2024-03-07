@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IDesignCard } from '../../_interfaces/IDesignCards';
 
 @Component({
   selector: 'app-design-card',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './design-card.component.scss'
 })
 export class DesignCardComponent {
-  cardText: {img: string, imgAlt: string, title: string, description: string} = {img: '', imgAlt: '', title: '', description: ''};
+  @Input() cardText: IDesignCard = {img: '', imgAlt: '', title: '', description: ''};
 }

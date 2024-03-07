@@ -6,6 +6,18 @@
   }
 }
 
+.design_cards_list{
+  width: 327px;
+  margin: 0 auto;
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  li{
+    width: 100%;
+  }
+}
 
 @media(min-width: 768px){
 
@@ -13,6 +25,10 @@
     .footer2-container{
       transform: translateY(30%);
     }
+  }
+
+  .design_cards_list{
+    width: 689px;
   }
 }
 
@@ -22,5 +38,12 @@
     .footer2-container{
       transform: translateY(25%);
     }
+  }
+
+  .design_cards_list{
+    margin-top: 200px;
+    width: 1110px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
   }
 }
