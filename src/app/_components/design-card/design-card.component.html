@@ -1,11 +1,11 @@
 <div class="card_container">
-  <img src="../../../assets/web-design/desktop/image-blogr.jpg" alt="">
+  <img [src]="cardText.img" [alt]="cardText.imgAlt">
   <article>
     <h3>
-      builder
+      {{cardText.title}}
     </h3>
     <p>
-      Connects users with local contractors based on their location
+      {{cardText.description}}
     </p>
   </article>
 </div>
