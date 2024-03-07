@@ -8,6 +8,14 @@
   }
 </ul>
 
+<div class="view_projects_cards_container">
+  @for(card of viewProjects; track $index){
+    <div class="card">
+      <app-view-projects-card [card]="card"></app-view-projects-card>
+    </div>
+  }
+</div>
+
 <section class="footers_container">
   <div class="footer2-container">
     <app-footer-2></app-footer-2>

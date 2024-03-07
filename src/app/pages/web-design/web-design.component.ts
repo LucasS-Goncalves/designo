@@ -5,11 +5,13 @@ import { OrangeHeaderComponent } from '../../_components/orange-header/orange-he
 import { DesignCardComponent } from '../../_components/design-card/design-card.component';
 import { IDesignCard } from '../../_interfaces/IDesignCards';
 import { CommonModule } from '@angular/common';
+import { ViewProjectsCardComponent } from '../../_components/view-projects-card/view-projects-card.component';
+import { IViewProjectsCard } from '../../_interfaces/IViewProjectsCard';
 
 @Component({
   selector: 'app-web-design',
   standalone: true,
-  imports: [CommonModule, Footer1Component, Footer2Component, OrangeHeaderComponent, DesignCardComponent],
+  imports: [CommonModule, Footer1Component, Footer2Component, OrangeHeaderComponent, DesignCardComponent, ViewProjectsCardComponent],
   templateUrl: './web-design.component.html',
   styleUrl: './web-design.component.scss'
 })
@@ -57,4 +59,23 @@ export class WebDesignComponent {
       description: 'Get expert training in coding, data, design, and digital marketing'
     },
   ];
+
+  viewProjects: IViewProjectsCard[] = [
+    {
+      title: 'APP DESIGN',
+      images: {
+        mobile: '../../../assets/home/mobile/image-app-design.jpg',
+        tablet: '../../../assets/home/tablet/image-app-design.jpg',
+        desktop: '../../../assets/home/desktop/image-app-design.jpg'
+      }
+    },
+    {
+      title: 'GRAPHIC DESIGN',
+      images: {
+        mobile: '../../../assets/home/mobile/image-graphic-design.jpg',
+        tablet: '../../../assets/home/tablet/image-graphic-design.jpg',
+        desktop: '../../../assets/home/desktop/image-graphic-design.jpg'
+      }
+    }
+  ]
 }
