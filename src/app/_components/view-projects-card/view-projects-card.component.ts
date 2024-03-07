@@ -11,11 +11,11 @@ import { CommonModule } from '@angular/common';
 })
 export class ViewProjectsCardComponent {
   @Input() card: IViewProjectsCard = {
-    title: 'Web Design',
+    title: '',
     images: {
-      mobile: '../../../assets/home/mobile/image-app-design.jpg',
-      tablet: '../../../assets/home/tablet/image-app-design.jpg',
-      desktop: '../../../assets/home/desktop/image-web-design-large.jpg'
+      mobile: '',
+      tablet: '',
+      desktop: ''
     }};
 
   @Input() largest = false;
