@@ -6,6 +6,8 @@
   margin: 0 auto;
   background-color: $light-bege;
   border-radius: 18px;
+  position: relative;
+
   img{
     width: 100%;
     height: 320px;
@@ -14,14 +16,15 @@
   }
 
   article{
-    width: 100%;
-    height: calc(100% - 320px);
+    width: 267px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     gap: 15px;
+    text-align: center;
 
     h3{
       font-size: 1.25rem;
@@ -38,6 +41,28 @@
       font-weight: 400;
       line-height: 26px;
       color: $dark-grey;
+    }
+  }
+}
+
+@media(min-width: 768px){
+
+  .card_container{
+    width: 689px;
+    height: 310px;
+
+    img{
+      width: 339px;
+      height: 100%;
+      border-radius: 18px 0 0 18px;
+    }
+
+    article{
+      width: 280px;
+      top: 50%;
+      left: unset;
+      right: 4.4%;
+      transform: translateY(-50%) translateX(0);
     }
   }
 }
