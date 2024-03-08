@@ -1,0 +1,26 @@
+<app-orange-header [text]="headerText"></app-orange-header>
+<img src="../../../assets/shared/desktop/bg-pattern-leaf.svg" alt="leaf" class="left_leaf">
+<ul class="graphic_cards_list">
+  @for (card of graphicDesignCards; track $index) {
+    <li >
+      <app-design-card [cardText]="card"></app-design-card>
+    </li>
+  }
+</ul>
+
+<div class="view_projects_cards_container">
+  @for(card of viewProjects; track $index){
+    <div class="card">
+      <app-view-projects-card [card]="card"></app-view-projects-card>
+    </div>
+  }
+</div>
+
+<section class="footers_container">
+  <div class="footer2-container">
+    <app-footer-2></app-footer-2>
+  </div>
+  <div class="footer1-container">
+    <app-footer-1></app-footer-1>
+  </div>
+</section>

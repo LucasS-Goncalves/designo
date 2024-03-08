@@ -67,7 +67,8 @@ export class WebDesignComponent {
         mobile: '../../../assets/home/mobile/image-app-design.jpg',
         tablet: '../../../assets/home/tablet/image-app-design.jpg',
         desktop: '../../../assets/home/desktop/image-app-design.jpg'
-      }
+      },
+      url: '/app-design'
     },
     {
       title: 'GRAPHIC DESIGN',
@@ -75,7 +76,8 @@ export class WebDesignComponent {
         mobile: '../../../assets/home/mobile/image-graphic-design.jpg',
         tablet: '../../../assets/home/tablet/image-graphic-design.jpg',
         desktop: '../../../assets/home/desktop/image-graphic-design.jpg'
-      }
+      },
+      url: '/graphic-design'
     }
   ]
 }

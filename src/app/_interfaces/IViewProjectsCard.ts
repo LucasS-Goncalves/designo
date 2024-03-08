@@ -4,5 +4,6 @@ export interface IViewProjectsCard {
     mobile: string,
     tablet: string,
     desktop: string
-  }
+  },
+  url: string
 }

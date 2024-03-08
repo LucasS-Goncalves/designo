@@ -1,4 +1,4 @@
-<div [ngClass]="{'largest': largest}">
+<div [ngClass]="{'largest': largest}" [routerLink]="card.url">
   <picture>
     <source media="(max-width: 767px)" [srcset]="card.images.mobile">
     <source media="(max-width: 1365px)" [srcset]="card.images.tablet">
