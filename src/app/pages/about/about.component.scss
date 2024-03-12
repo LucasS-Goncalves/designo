@@ -78,3 +78,30 @@ header{
     }
   }
 }
+
+@media(min-width: 1366px){
+
+  header{
+    width: 1111px;
+    flex-direction: row-reverse;
+
+    picture{
+      img{
+        width: 476px;
+        height: 480px;
+        border-radius: 0 15px 15px 0;
+      }
+    }
+
+    .article-container{
+      width: 635px;
+      height: 480px;
+      border-radius: 15px 0 0 15px;
+
+      article{
+        width: 458px;
+        text-align: start;
+      }
+    }
+  }
+}
