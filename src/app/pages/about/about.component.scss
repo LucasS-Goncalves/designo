@@ -1,0 +1,61 @@
+@import "../../../styles/variables.scss";
+
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  picture{
+    img{
+      width: 100%;
+      height: 320px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .article-container{
+    width: 100%;
+    height: 395px;
+    background-color: $peach;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    article{
+      width: 327px;
+      text-align: center;
+      color: $white;
+
+      h1{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .circles-container{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      picture{
+        width: 100%;
+        height: 100%;
+
+        .circles-img{
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: none;
+          object-position:top right;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
